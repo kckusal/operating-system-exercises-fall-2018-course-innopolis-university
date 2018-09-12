@@ -17,7 +17,7 @@ int main(){
   scanf("%s", cmd);
 
   // pass the command to the host environment to be executed by the system terminal
-  system(command);
+  system(cmd);
   
   return(0);
 }
