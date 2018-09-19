@@ -3,7 +3,7 @@
 #   adding 1 to it, and then appending it to the file. Run one instance of the script in the background and one
 #   in the foreground, each accessing the same file.
 
-# Assume that there's a file called "input.txt" in the same directory as this script file
+# Assume that there's a file called "input.txt" with some number(s) in the same directory as this script file
 
 in=input.txt
 awk -v last="$last" 'END { printf "\n%s",$0=$0+1 }' $in >> $in
