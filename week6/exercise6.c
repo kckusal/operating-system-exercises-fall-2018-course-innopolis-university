@@ -39,7 +39,7 @@ int main() {
       printf("Second fork() failed!\n");
     }
     else if (p2>0) {  // first-child process OR parent of second-child
-      /* write the pid of second-child process to the pipe *
+      /* write the pid of second-child process to the pipe */
       close(PIPE[0]);   // close reading end
       write(PIPE[1], &p2, sizeof(p2));
       close(PIPE[1]);   // close writing end
