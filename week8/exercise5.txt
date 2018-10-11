@@ -1,0 +1,10 @@
+# EXERCISE DESCRIPTION:
+    What is the difference between a physical and a virtual address? Describe using your own words.
+
+# Answer:
+  A physical address refers to an actual location in the memory unit. It cannot be viewed by the
+  user directly and is computed by Memory Management Unit.
+  
+  A virtual address, on the other hand, is just a pointer or marker for a memory space that an
+  operating system allows a process to use. It can be viewed by the user. Virtual memory is usually
+  larger than the physical memory available.
