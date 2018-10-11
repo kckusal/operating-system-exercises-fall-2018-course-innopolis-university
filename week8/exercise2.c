@@ -15,10 +15,10 @@ int main() {
   // converts 10 MB to bytes
   int bytes = (10 * 1024 * 1024);
 
-  int * arr;  // placeholder array
+  void * arr;  // placeholder array
 
   for(int i=1; i<=10; i++) {
-    arr = (int *) malloc(bytes);  // allocate 10 mb to the array
+    arr = malloc(bytes);  // allocate 10 mb to the array
     memset(arr, 0, bytes);        // fill it with zeros
     sleep(1);                     // continue execution from next second
   }
