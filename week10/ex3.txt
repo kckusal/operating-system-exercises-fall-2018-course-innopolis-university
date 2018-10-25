@@ -1,0 +1,15 @@
+# EXERCISE DESCRIPTION:
+# • Make a file _ex3.txt and try the following:
+# • Remove execute permission for everybody
+# • Grant all permissions to owner and others (not group)
+# • Make group permissions equal to user permissions
+#   – What does 660 mean for ex3.txt?
+#   – What does 775 mean for ex3.txt?
+#   – What does 777 mean for ex3.txt?
+# • After each step save the output/answer to the ex3.txt
+
+# This contains output of running the above commands.
+
+ chmod 600 -> r+w only for owner  
+ chmod 775 -> r+w+x for everyone (excluding public write)
+ chmod 777 -> r+w+x for everyone
