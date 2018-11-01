@@ -1,0 +1,15 @@
+In program 1, the output is:
+    Hello
+    Hello
+In program 2, the output is:
+    Hello
+    
+The difference in output can be explained by the presence of the newline character inside printf() function
+in the first command inside of main() method.
+
+printf() buffers output until a newline is encountered. Program 2, having \n, causes the output buffer to
+flush after the first printf() call, and when the fork hits, both processes have an empty buffer.
+
+When we fork the process, the child processes inherits every part of the parent process, including the unflushed output buffer.
+When the process terminates, the buffers are flushed. In program 1, we start a total of two processes (including the original
+process), and the unflushed buffer will be flushed at the termination of each individual process. Hence, 'Hello' is printed twice.
