@@ -29,7 +29,7 @@ int main(){
 
   off_t size = myStat.st_size;  // size of the file
   char *addr;
-  addr = mmap(NULL, strlen(str), PROT_READ|PROT_WRITE, MAP_SHARED, myFile, 0);
+  addr = mmap(NULL, size, PROT_READ|PROT_WRITE, MAP_SHARED, myFile, 0);
 
   if (addr == MAP_FAILED){
     printf("mmap error\n");
