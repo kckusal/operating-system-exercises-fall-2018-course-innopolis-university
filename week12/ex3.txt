@@ -1,0 +1,9 @@
+Output results with different Buffer Sizes:
+  100 bytes: 0.086 secs
+  550 bytes: 0.013 secs
+  551000 bytes: 0.007 secs
+  
+After Modifying the open() system call to include the O_SYNC flag:
+  100 bytes: 337.68 secs
+  550 bytes: 17.286 secs
+  551000 bytes: 0.041 secs
